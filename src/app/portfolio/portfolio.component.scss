@@ -1,0 +1,28 @@
+.portfolio-main{
+    width: 100%;
+    height: auto;
+
+.container{
+    .main-title{
+        text-align: center;
+        margin: 0 auto;
+        word-break: 100%;
+        max-width: 750px;
+        height: auto;
+        clear: both;
+
+        span {
+            font-size: 24px;
+            color: #fb503b;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 48px;
+            line-height: 1.25;
+            margin-bottom: 30px;
+        }
+    }
+}
+}

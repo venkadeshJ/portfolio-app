@@ -20,7 +20,7 @@
             right: 0;
 
             .image {
-                background-image: url(https://devman-react.vercel.app/img/hero/1.jpg);
+                background-image: url(../../assets/images/bg.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 50%;
@@ -48,6 +48,10 @@
                         color: #fff;
                         font-size: 35px;
                         margin-bottom: 3px;
+
+                        @media (max-width: 1024px) {
+                            font-size: 32px!important;
+                        }
                     }
 
                     .name {
@@ -55,12 +59,19 @@
                         font-size: 77px;
                         line-height: 1.1;
                         margin-bottom: 24px;
+
+                        @media (max-width: 1024px) {
+                            font-size: 36px!important;
+                        }
                     }
 
                     .job {
                         color: #fff;
                         font-size: 26px;
                         margin-bottom: 33px;
+                        @media (max-width: 1024px) {
+                            font-size: 18px!important;
+                        }
                     }
 
                     .text {
@@ -98,6 +109,11 @@
                         .about-me {
                             margin-left: 50px;
 
+                            @media screen and (max-width: 1024px) {
+                                margin-left: 20px!important;
+                                
+                            }
+
                             a {
                                 color: #fff;
                                 display: inline-block;
@@ -117,6 +133,11 @@
                 width: 55%;
                 padding-left: 250px;
 
+                @media screen and (max-width: 1024px) {
+                    padding-left: 0!important;
+                    
+                }
+
                 .image {
                     position: relative;
 
@@ -131,6 +152,10 @@
                         border-radius: 12px;
                         top: -40px;
                         right: -40px;
+
+                        @media screen and (max-width: 1024px) {
+                            right: -20px!important;
+                        }
 
                         .svg {
                             width: 65px;
@@ -198,6 +223,11 @@
                         bottom: 60px;
                         left: 100%;
                         margin-left: -75px;
+
+                        @media screen and (max-width: 1024px) {
+                            bottom: -30px!important;
+                            margin-left: -178px!important;
+                        }
 
                         .wrapper {
                             padding: 15px 20px 19px;
@@ -333,6 +363,11 @@
                                         }
                                     }
                                 }
+                                @media (max-width: 767px) {
+                                    width: 100%!important; 
+                                    padding-left: 50px;
+                                  }
+                                
                         }
                     }
                 }
@@ -411,11 +446,12 @@
             overflow: hidden;
 
                 ul {
-                    margin-top: 5rem!important;
+                    margin-top: 2rem!important;
                     list-style-type: none;
                     border-radius: 20px;
                     overflow: hidden;
                     padding-left: 0!important;
+
                     
                     li:first-child .list_inner {
                         background-color: #6e7fd1;
@@ -435,7 +471,9 @@
                         float: left;
                         visibility: visible;
                         animation-duration: 1s;
-
+                        @media screen and (max-width: 767px) {
+                            width: 100%!important;
+                        }
                         .list_inner {
                             width: 100%;
                             height: 100%;
@@ -444,6 +482,10 @@
                             position: relative;
                             padding: 125px 70px 75px;
                             transition: all .3s ease;
+
+                            @media screen and (max-width: 767px) {
+                                padding: 30px 23px 8px!important;
+                            }
                         }
 
                         .svg {
@@ -466,3 +508,10 @@
         }
     }
 }
+
+//css
+.d-button{
+    background-color: #6e7fd1;
+    color: #fff;
+    font-weight: bold;
+ }
