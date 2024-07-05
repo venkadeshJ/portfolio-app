@@ -4,11 +4,11 @@
 
     .main-hero-section {
         width: 100%;
-        height: 100vh;
+        height: 650px;
         position: relative;
         float: left;
         overflow: hidden;
-        margin-bottom: 190px;
+        margin-bottom: 50px;
         box-sizing: border-box;
         padding-top: 5rem;
 
@@ -25,7 +25,7 @@
                 background-size: cover;
                 background-position: 50%;
                 width: 100%;
-                height: 100%;
+                height: 650px;
             }
         }
 
@@ -238,6 +238,231 @@
                     }
                 }
             }
+        }
+    }
+
+    .key-skills {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+
+        .features {
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+            margin-bottom: 20px;
+
+            .container {
+                .features_list {
+                    width: 100%;
+                    height: auto;
+
+                    ul {
+                        margin: 0 0 0 -70px;
+                        list-style-type: none;
+
+                        li {
+                            visibility: visible;
+                            animation-duration: 1s;
+                                margin: 0 0 70px;
+                                width: 33.3333%;
+                                float: left;
+                                padding-left: 70px;
+                                .list_inner {
+                                    width: 100%;
+                                    height: auto;
+                                    clear: both;
+                                    float: left;
+                                    position: relative;
+
+                                    .short {
+                                        width: 100%;
+                                        float: left;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding-bottom: 35px;
+                                        margin-bottom: 30px;
+                                        position: relative;
+                                        span {
+                                            display: inline-block;
+                                            color: #fb503b;
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            font-family : 'Poppins', sans-serif;
+                                            margin-bottom: 5px;
+                                        }
+                                        h3 {
+                                            font-size: 24px;
+                                        }
+                                        .svg {
+                                            width: 60px;
+                                            height: 60px;
+                                        }
+
+                                        title {
+                                            padding-right: 20px;
+                                        }
+                                    }
+                                    .short:before {
+                                        position: absolute;
+                                        content: "";
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: #cacdd3;
+                                        left: 0;
+                                        bottom: 0;
+                                    }
+                                    .short:after {
+                                        position: absolute;
+                                        content: "";
+                                        width: 0;
+                                        height: 1px;
+                                        background-color: #8d8d8e;
+                                        left: 0;
+                                        bottom: 0;
+                                        z-index: 1;
+                                        transition: all .3s ease;
+                                    }
+                                    .text{
+                                        p{
+                                            font-size: 18px;
+                                            color: #54545f;
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog{
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+
+        .news{
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+
+        .container{
+            .news_list{
+                margin-top: 30px;
+                width: 100%;
+                height: auto
+            }
+
+            .card{
+                border-radius: 10px;
+            }
+
+            ul{
+                margin: 0 0 0 -25px;
+                list-style-type: none;
+
+                li{
+                    margin: 0 0 25px;
+                    width: 33.3333%;
+                    float: left;
+                    padding-left: 25px;
+                    visibility: visible;
+                    animation-duration: 1s;
+                    animation-delay: 0s;
+
+                    .list_inner {
+                        width: 100%;
+                        height: auto;
+                        clear: both;
+                        float: left;
+                        position: relative;
+                    }
+
+                    .main{
+                        background-image: url(/public//assets/images/newsone.jpg);
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: 50%;
+                        border-radius: 13px;
+                        transform: scale(1) translateZ(0);
+                        transition: all .3s ease;
+                    }
+                }
+            }
+
+        }
+        }
+    }
+    .services{
+        .service_list {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            overflow: hidden;
+
+                ul {
+                    margin-top: 5rem!important;
+                    list-style-type: none;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    padding-left: 0!important;
+                    
+                    li:first-child .list_inner {
+                        background-color: #6e7fd1;
+                    }
+                    li:nth-child(2) .list_inner {
+                        background-color: #343c55;
+                    }
+                    li:nth-child(3) .list_inner {
+                        background-color: #142eb5;
+                    }
+                    li:nth-child(4) .list_inner {
+                        background-color: #6b97d3;
+                    }
+                    li {
+                        margin: 0;
+                        width: 50%;
+                        float: left;
+                        visibility: visible;
+                        animation-duration: 1s;
+
+                        .list_inner {
+                            width: 100%;
+                            height: 100%;
+                            clear: both;
+                            float: left;
+                            position: relative;
+                            padding: 125px 70px 75px;
+                            transition: all .3s ease;
+                        }
+
+                        .svg {
+                            width: 85px;
+                            height: 85px;
+                            color: #fff;
+                            margin-bottom: 30px;
+                        }
+                        title {
+                            font-size: 36px;
+                            color: #fff;
+                            margin-bottom: 30px;
+                        }
+                       .text {
+                            color: #fff;
+                            line-height: 37px;
+                        }
+                    }
+                }
         }
     }
 }

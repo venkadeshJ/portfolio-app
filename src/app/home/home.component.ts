@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
   yearsOfExperience: number = 0;
   projectsWorked: number = 0;
+  getImagePath(imageName: string): string {
+    return `../../assets/images/${imageName}.jpg`;
+  }
 
   ngOnInit():void{
     this.animateNumbers();
