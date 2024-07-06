@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,9 @@ export class HomeComponent {
   getImagePath(imageName: string): string {
     return `../../assets/images/${imageName}.jpg`;
   }
-
+  constructor(private router : Router){
+    
+  }
   ngOnInit():void{
     this.animateNumbers();
   }
@@ -34,5 +37,9 @@ export class HomeComponent {
         clearInterval(interval);
       }
     }, 80); 
+  }
+
+  navigateToPortfolio(){
+    this.router.navigate(['/portfolio']);
   }
 }

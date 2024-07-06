@@ -12,16 +12,16 @@
                         <h3 class="hello">Hello I'm</h3>
                         <h3 class="name">Venkadesh</h3>
                         <h3 class="job">Senior Software Engineer</h3>
-                        <p class="text">Jodi kokhono vul hoye jai tumi oporadh nio na ptate velit esse cillum dolore</p>
+                        <p class="text">specializing in front-end web development. Passionate about creating seamless user experiences with cutting-edge technologies.</p>
                         <div class="buttons">
-                            <div class="simple-button"><a class="anchor" href="#contact">Contact Me</a></div>
-                            <div class="about-me"><a class="anchor" href="#about">About Me</a></div>
+                            <div class="simple-button"><a class="anchor" href="#">Contact Me</a></div>
+                            <div class="about-me"><a class="anchor" role="button" (click)="navigateToPortfolio()">View Portfolio</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="right">
                     <div class="image">
-                        <img src="/public/assets/images/thumb.jpg" alt="">
+                        <img src="/assets/images/thumb.jpg" alt="">
                         <div class="main">
                         </div>
                         <div class="win">
@@ -117,9 +117,10 @@
         <div class="card w-100">
             <img src="../../assets/images/profile-home.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+                <h3 class="card-title">Venkadesh</h3>
               <h5 class="card-title">Senior Software Engineer</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button type="button" class="btn d-button">View Portfolio</button>
+              <p class="card-text">specializing in front-end web development.</p>
+              <button type="button" class="btn d-button" (click)="navigateToPortfolio()">View Portfolio</button>
             </div>
           </div>
     </div>
