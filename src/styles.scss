@@ -10,7 +10,42 @@ body {
     padding: 0;
 }
 
-.main {
+//variables 
+
+$font-family: 'Roboto', sans-serif;
+$primary-color: #4c5aa4;
+$secondary-color: #6e7aba;
+$highlight-color: #50c5f0;
+$error-color: #f05c6e;
+
+//Mixins
+@mixin button-styles {
+    a{
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  
+    &:hover {
+      background-color: $secondary-color;
+      border: 1px solid $primary-color;
+    }
+    }
+    
+  
+    @media (max-width: 768px) {
+      font-size: 0.825rem;
+    }
+  }
+  
+  .main {
     height: auto;
     width: 100%;
 
@@ -124,29 +159,7 @@ body {
                             float: left;
                             height: auto;
                             width: auto;
-
-                            a {
-                                background-color: #4c5aa4;
-                                border: 1px solid #4c5aa4;
-                                border-radius: 50px;
-                                color: #fff;
-                                cursor: pointer;
-                                display: inline-block;
-                                font-size: 1rem;
-                                margin-top: 20px;
-                                padding: 8px 20px;
-                                text-decoration: none;
-                                transition: all 0.3s ease;
-
-                                &:hover {
-                                    background-color: #6e7aba;
-                                    border: 1px solid #4c5aa4;
-                                }
-
-                                @media (max-width: 768px) {
-                                    font-size: 0.825rem;
-                                }
-                            }
+                           @include button-styles;
                         }
 
                         .about-me {
@@ -310,3 +323,4 @@ body {
         }
     }
 }
+  
