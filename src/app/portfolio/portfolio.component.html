@@ -3,7 +3,26 @@
         <div class="main-title">
             <span>Portfolio</span>
             <h3>My Amazing Works</h3>
-            <p>Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate</p>
         </div>
     </div>
 </section>
+<!--portfolio cards-->
+<div class="container mt-4 pb-5">
+    <div class="row">
+        @for(project of projects; track project.id){
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" [src]="project.image" alt="Project Image">
+                  <div class="card-body">
+                    <h4 class="card-title">{{ project.name }}</h4>
+                    <p class="card-text">{{ project.description }}</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">{{ project.technologies }}</small>
+                  </div>
+                </div>
+              </div>
+        }
+    </div>
+  </div>
+  
