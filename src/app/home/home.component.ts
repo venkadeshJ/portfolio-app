@@ -40,6 +40,6 @@ export class HomeComponent {
   }
 
   navigateToPortfolio(){
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/about-me']);
   }
 }
